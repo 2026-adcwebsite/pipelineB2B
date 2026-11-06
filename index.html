@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="sq"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>B2B Pipeline – Shitjet</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f5f6f8;--card:#fff;--tx:#14171f;--mu:#6b7280;--bd:#e5e7eb;--ac:#c8102e;--ac2:#fde8ec;color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1115;--card:#181b22;--tx:#eceef2;--mu:#9aa1ad;--bd:#2a2e38;--ac:#ff4d63;--ac2:#3a1a20;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1115;--card:#181b22;--tx:#eceef2;--mu:#9aa1ad;--bd:#2a2e38;--ac:#ff4d63;--ac2:#3a1a20;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:14px 20px;background:var(--card);border-bottom:1px solid var(--bd)}
+h1{font-size:17px;margin:0;display:flex;gap:8px;align-items:center}h1 i{width:10px;height:10px;border-radius:50%;background:var(--ac);display:inline-block}
+nav{display:flex;gap:4px;flex-wrap:wrap}nav button{border:0;background:none;color:var(--mu);padding:8px 14px;border-radius:8px;font:inherit;cursor:pointer;font-weight:600}
+nav button.on{background:var(--ac2);color:var(--ac)}
+.who{display:flex;gap:8px;align-items:center;color:var(--mu)}.badge{background:var(--ac2);color:var(--ac);padding:2px 10px;border-radius:99px;font-weight:700;font-size:12px}
+.live{display:inline-flex;gap:5px;align-items:center;font-size:12px;color:#16a34a}.live:before{content:"";width:7px;height:7px;border-radius:50%;background:#16a34a;animation:p 1.6s infinite}@keyframes p{50%{opacity:.25}}
+main{max-width:1280px;margin:0 auto;padding:18px 20px 40px}
+.grid{display:grid;gap:14px}.k{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px}.card h3{margin:0 0 12px;font-size:13px;color:var(--mu);text-transform:uppercase;letter-spacing:.04em}
+.kpi b{display:block;font-size:28px;line-height:1.1}.kpi span{color:var(--mu);font-size:12px}
+.fl{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 14px;align-items:end}.fl label{display:grid;gap:3px;font-size:12px;color:var(--mu)}
+input,select,textarea,button.b{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:8px 10px;min-width:0}textarea{width:100%;min-height:90px}
+button.b{cursor:pointer;font-weight:600}button.p{background:var(--ac);color:#fff;border-color:var(--ac)}
+.row{display:grid;grid-template-columns:130px 1fr 40px;gap:8px;align-items:center;margin:7px 0;font-size:13px}.bar{height:14px;background:var(--bd);border-radius:7px;overflow:hidden;display:flex}.bar>div{height:100%}
+.col{display:flex;align-items:flex-end;gap:6px;height:170px;overflow-x:auto;padding-top:6px}.col>div{flex:1;min-width:28px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-size:11px;color:var(--mu)}.col i{display:block;width:100%;background:var(--ac);border-radius:5px 5px 0 0;min-height:2px}
+.don{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.ring{width:120px;height:120px;border-radius:50%;position:relative}.ring:after{content:"";position:absolute;inset:26px;background:var(--card);border-radius:50%}
+.lg div{display:flex;gap:6px;align-items:center;font-size:13px;margin:3px 0}.lg i{width:10px;height:10px;border-radius:3px}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;color:var(--mu);font-size:11px;text-transform:uppercase;padding:8px;border-bottom:1px solid var(--bd);white-space:nowrap}td{padding:9px 8px;border-bottom:1px solid var(--bd);vertical-align:top}
+.pill{padding:2px 10px;border-radius:99px;color:#fff;font-size:12px;font-weight:600;white-space:nowrap}.cm{max-width:420px;color:var(--mu)}
+.f{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}.f label{display:grid;gap:4px;font-size:12px;color:var(--mu)}.f .w{grid-column:1/-1}
+.pr{display:grid;grid-template-columns:1fr 70px;gap:6px;align-items:center}.pr label{display:flex;gap:6px;align-items:center;color:var(--tx);font-size:13px}
+h2{font-size:15px;margin:18px 0 8px}.mu{color:var(--mu)}.c{max-width:460px;margin:60px auto;text-align:center}
+@media(max-width:640px){main{padding:12px}.row{grid-template-columns:90px 1fr 32px}}
+
+</style></head><body><div id="app"><div class="c mu">Duke u ngarkuar…</div></div>
+<script>
+/* Modaliteti DEMO: kur faqja hapet jashtë Claude (p.sh. GitHub Pages), të dhënat ruhen në localStorage të shfletuesit.
+   Hap ?u=emri për të simuluar një përdorues tjetër (kërkon miratim nga Admini "demo"). */
+if(typeof claude==='undefined'){(()=>{
+ const uid=new URLSearchParams(location.search).get('u')||'demo',K='pl_',L={};
+ const load=c=>JSON.parse(localStorage.getItem(K+c)||'{}'),fire=c=>(L[c]||[]).forEach(f=>f());
+ const save=(c,o)=>{localStorage.setItem(K+c,JSON.stringify(o));fire(c)};
+ addEventListener('storage',e=>e.key&&e.key.startsWith(K)&&fire(e.key.slice(K.length)));
+ const snap=c=>({docs:Object.entries(load(c)).map(([id,v])=>({id,exists:true,data:()=>v}))});
+ const col=c=>({onSnapshot(f){(L[c]=L[c]||[]).push(()=>f(snap(c)));setTimeout(()=>f(snap(c)));return()=>{}},
+  async add(d){const o=load(c);o['m'+Date.now()+Math.random().toString(36).slice(2,6)]=d;save(c,o)}});
+ const doc=p=>{const[c,id]=p.split('/');return{
+  async set(d){const o=load(c);o[id]=d;save(c,o)},
+  async update(d){const o=load(c);o[id]={...o[id],...d};save(c,o)},
+  async delete(){const o=load(c);delete o[id];save(c,o)}}};
+ const dl=async({filename,data})=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data]));a.download=filename;a.click()};
+ const svc={db:{collection:col,doc},downloads:{save:dl},user:{me:async()=>({name:uid==='demo'?'Admin Demo':uid}),id:async()=>uid,isOwner:async()=>uid==='demo'}};
+ window.claude={use:async n=>svc[n]||null};
+})()}
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ST=['Lead i Ri','Takim i Kryer','Analizë Nevojash','Ofertë Dërguar','Negocim','Won','Lost'];
+const SC={'Lead i Ri':'#6366f1','Takim i Kryer':'#0ea5e9','Analizë Nevojash':'#f59e0b','Ofertë Dërguar':'#a855f7','Negocim':'#ec4899','Won':'#16a34a','Lost':'#9ca3af'};
+const MOD=['Takim F2F','Telefonate','Kontak me E-mail'],PRI=['High','Medium','Low'],TIP=['Base','Prospect'],POZ=['Administrator','Pronar','Aksioner','Financier','Jurist','Drejtor i Pergjithshem','IT','Other'];
+const PRODS=[['mob','Mobile'],['fix','Fixed Internet'],['m2m','M2M/IoT'],['gps','Fleet/GPS'],['m365','Microsoft 365']];
+const ROLES=['Agjent','Menaxher','Admin'],PC=['#c8102e','#0ea5e9','#f59e0b','#16a34a','#a855f7','#ec4899','#64748b'];
+let db,user,me,role,staff={},reqs=[],M=[],tab,F={from:'',to:'',agent:'',q:'',st:''},edit=null,loaded=false,boot=false;
+const today=()=>new Date().toISOString().slice(0,10),fmt=n=>Number(n||0).toLocaleString('sq-AL');
+const pill=s=>s?`<span class="pill" style="background:${SC[s]||'#888'}">${esc(s)}</span>`:'<span class="mu">–</span>';
+
+async function init(){
+  if(typeof claude==='undefined'){$('#app').innerHTML='<div class="c"><h2>Hape brenda Claude</h2><p class="mu">Kjo faqe lidhet me bazën e të dhënave vetëm kur publikohet si Claude Artifact.</p></div>';return}
+  user=await claude.use('user');db=await claude.use('db');
+  if(!user||!db){$('#app').innerHTML='<div class="c"><h2>Hyr në llogari</h2><p class="mu">Hape faqen nga llogaria jote Claude për të përdorur sistemin.</p></div>';return}
+  const v=await user.me();me={id:await user.id(),name:v.name||v.email||'Përdorues'};
+  const t=setTimeout(()=>{if(!loaded)$('#app').innerHTML='<div class="c mu">Nuk u lidh me bazën e të dhënave. Rifresko faqen.</div>'},10000);
+  db.collection('staff').onSnapshot(async s=>{
+    staff={};s.docs.forEach(d=>staff[d.id]=d.data());
+    if(!staff[me.id]&&!boot){boot=true;
+      if(await user.isOwner())await db.doc('staff/'+me.id).set({name:me.name,role:'Admin'});
+      else await db.doc('requests/'+me.id).set({name:me.name,at:Date.now()}).catch(()=>{});}
+    const r=staff[me.id]?.role;
+    if(r&&r!==role){role=r;tab=r==='Agjent'?'new':'dash';
+      db.collection('meetings').onSnapshot(q=>{M=q.docs.map(d=>({id:d.id,...d.data()}));loaded=true;clearTimeout(t);draw()},()=>{});
+      if(r==='Admin')db.collection('requests').onSnapshot(q=>{reqs=q.docs.map(d=>({id:d.id,...d.data()}));loaded&&draw()},()=>{});}
+    if(!r){loaded=true;clearTimeout(t)}draw()},e=>{$('#app').innerHTML='<div class="c mu">Gabim: '+esc(e.message)+'</div>'});
+}
+function draw(){
+  if(!role){$('#app').innerHTML='<div class="c"><h2>Në pritje të miratimit</h2><p class="mu">Kërkesa jote u dërgua. Admini duhet të të caktojë një rol (Agjent, Menaxher ose Admin). Kjo faqe do të hapet automatikisht pasi të miratohesh.</p></div>';return}
+  const tabs=role==='Agjent'?[['new','＋ Takim i ri'],['mine','Takimet e mia']]:[['dash','Dashboard'],['list','Të gjitha takimet']].concat(role==='Admin'?[['users','Përdoruesit'+(reqs.length?' ('+reqs.length+')':'')]]:[]);
+  if(!tabs.some(x=>x[0]===tab))tab=tabs[0][0];
+  const body={new:form,mine:mine,dash:dash,list:list,users:users}[tab]();
+  const a=document.activeElement,keep=a&&a.id&&a.tagName==='INPUT'&&tab==='list'?[a.id,a.selectionStart]:null;
+  $('#app').innerHTML=`<header><h1><i></i>B2B Pipeline</h1><nav>${tabs.map(t=>`<button class="${t[0]===tab?'on':''}" onclick="go('${t[0]}')">${t[1]}</button>`).join('')}</nav><div class="who"><span class="live">Live</span>${esc(me.name)} <span class="badge">${role}</span></div></header><main>${body}</main>`;
+  if(keep){const e=$('#'+keep[0]);if(e){e.focus();e.setSelectionRange(keep[1],keep[1])}}
+}
+const go=t=>{tab=t;if(t!=='new')edit=null;draw()};
+const agents=()=>[...new Set(M.map(m=>m.agentName).filter(Boolean))].sort();
+function filt(){return M.filter(m=>(!F.from||m.date>=F.from)&&(!F.to||m.date<=F.to)&&(!F.agent||m.agentName===F.agent)&&(!F.st||m.status===F.st)&&(!F.q||(m.company+' '+m.contact+' '+m.comment+' '+m.industry).toLowerCase().includes(F.q.toLowerCase()))).sort((a,b)=>(b.date||'').localeCompare(a.date||'')||(b.ts||0)-(a.ts||0))}
+function filters(){return`<div class="fl"><label>Nga<input type="date" value="${F.from}" onchange="F.from=this.value;draw()"></label><label>Deri<input type="date" value="${F.to}" onchange="F.to=this.value;draw()"></label><label>Agjenti<select onchange="F.agent=this.value;draw()"><option value="">Të gjithë</option>${agents().map(a=>`<option ${F.agent===a?'selected':''}>${esc(a)}</option>`).join('')}</select></label><label>Statusi<select onchange="F.st=this.value;draw()"><option value="">Të gjitha</option>${ST.map(s=>`<option ${F.st===s?'selected':''}>${s}</option>`).join('')}</select></label>${tab==='list'?`<label>Kërko<input id="q" value="${esc(F.q)}" placeholder="kompani, koment…" oninput="F.q=this.value;draw()"></label>`:''}<button class="b" onclick="csv()">⬇ Eksporto CSV</button></div>`}
+const cnt=(a,f)=>a.reduce((o,x)=>{const k=f(x)||'–';o[k]=(o[k]||0)+1;return o},{});
+function bars(o,keys,colors){const mx=Math.max(1,...keys.map(k=>o[k]||0));return keys.map((k,i)=>`<div class="row"><span>${esc(k)}</span><div class="bar"><div style="width:${(o[k]||0)/mx*100}%;background:${colors?colors[k]||PC[i%7]:PC[i%7]}"></div></div><b>${o[k]||0}</b></div>`).join('')}
+function donut(o){const ks=Object.keys(o),t=ks.reduce((s,k)=>s+o[k],0)||1;let p=0;const g=ks.map((k,i)=>{const s=p;p+=o[k]/t*100;return`${PC[i%7]} ${s}% ${p}%`}).join(',');return`<div class="don"><div class="ring" style="background:conic-gradient(${g||'var(--bd) 0 100%'})"></div><div class="lg">${ks.map((k,i)=>`<div><i style="background:${PC[i%7]}"></i>${esc(k)} <b>${o[k]}</b> <span class="mu">${Math.round(o[k]/t*100)}%</span></div>`).join('')}</div></div>`}
+function dash(){
+  const d=filt(),n=d.length,won=d.filter(m=>m.status==='Won').length,hot=d.filter(m=>['Negocim','Ofertë Dërguar'].includes(m.status)).length,pot=d.reduce((s,m)=>s+(+m.potential||0),0);
+  const ag=[...new Set(d.map(m=>m.agentName))].sort(),days=cnt(d,m=>m.date),dk=Object.keys(days).sort().slice(-21),dm=Math.max(1,...dk.map(k=>days[k]));
+  const stack=ag.map(a=>{const r=d.filter(m=>m.agentName===a);return`<div class="row"><span>${esc(a)}</span><div class="bar">${ST.map(s=>{const c=r.filter(m=>m.status===s).length;return c?`<div title="${s}: ${c}" style="width:${c/Math.max(1,...ag.map(x=>d.filter(m=>m.agentName===x).length))*100}%;background:${SC[s]}"></div>`:''}).join('')}</div><b>${r.length}</b></div>`}).join('');
+  return filters()+`<div class="grid k"><div class="card kpi"><b>${n}</b><span>Takime gjithsej</span></div><div class="card kpi"><b style="color:#16a34a">${won}</b><span>Won</span></div><div class="card kpi"><b>${hot}</b><span>Ofertë / Negocim</span></div><div class="card kpi"><b>${fmt(pot)}</b><span>Potenciali mujor (Lekë)</span></div><div class="card kpi"><b>${n?Math.round(won/n*100):0}%</b><span>Konvertimi në Won</span></div></div>
+<div class="grid g2" style="margin-top:14px"><div class="card"><h3>Pipeline sipas statusit</h3>${bars(cnt(d,m=>m.status),ST,SC)}</div><div class="card"><h3>Takime sipas agjentit (me status)</h3>${stack||'<span class="mu">Pa të dhëna</span>'}<div class="lg" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">${ST.map(s=>`<div><i style="background:${SC[s]}"></i>${s}</div>`).join('')}</div></div>
+<div class="card"><h3>Takime ditore (21 ditët e fundit)</h3><div class="col">${dk.map(k=>`<div><span>${days[k]}</span><i style="height:${days[k]/dm*130}px"></i><span>${k.slice(8)}/${k.slice(5,7)}</span></div>`).join('')||'<span class="mu">Pa të dhëna</span>'}</div></div>
+<div class="card"><h3>Mënyra e takimit</h3>${donut(cnt(d,m=>m.mode))}</div><div class="card"><h3>Base vs Prospect</h3>${donut(cnt(d,m=>m.type))}</div><div class="card"><h3>Prioriteti</h3>${bars(cnt(d,m=>m.prio),PRI,{High:'#c8102e',Medium:'#f59e0b',Low:'#9ca3af'})}</div></div>
+<h2>Aktiviteti i fundit: statusi dhe komentet</h2><div class="card tw">${table(d.slice(0,12))}</div>`}
+function table(d,own){return`<table><tr><th>Data</th><th>Agjenti</th><th>Kompania</th><th>Kontakti</th><th>Prioriteti</th><th>Potenciali</th><th>Statusi</th><th>Komentet</th>${own?'<th></th>':''}</tr>${d.map(m=>`<tr><td>${esc(m.date)}</td><td>${esc(m.agentName)}</td><td><b>${esc(m.company)}</b><br><span class="mu">${esc(m.mode)} · ${esc(m.type)}</span></td><td>${esc(m.contact)}<br><span class="mu">${esc(m.phone)}</span></td><td>${esc(m.prio)}</td><td>${m.potential?fmt(m.potential):'–'}</td><td>${pill(m.status)}</td><td class="cm">${esc(m.comment)}</td>${own?`<td><button class="b" onclick="ed('${m.id}')">Edito</button></td>`:''}</tr>`).join('')||'<tr><td colspan=9 class="mu">Asnjë takim.</td></tr>'}</table>`}
+function list(){return filters()+`<div class="card tw">${table(filt().slice(0,300))}</div>`}
+function mine(){const d=M.filter(m=>m.agentId===me.id).sort((a,b)=>(b.date||'').localeCompare(a.date||'')||(b.ts||0)-(a.ts||0));return`<div class="card tw"><h3>Takimet e mia (${d.length})</h3>${table(d,1)}</div>`}
+const ed=id=>{edit=M.find(m=>m.id===id);tab='new';draw()};
+function form(){
+  const m=edit||{date:today(),prods:{}},o=(a,v)=>a.map(x=>`<option ${x===v?'selected':''}>${x}</option>`).join(''),t=(id,l,v,ty='text')=>`<label>${l}<input id="f_${id}" type="${ty}" value="${esc(v)}"></label>`,s=(id,l,a,v)=>`<label>${l}<select id="f_${id}"><option value=""></option>${o(a,v)}</select></label>`;
+  return`<div class="card"><h3>${edit?'Edito takimin':'Takim i ri'}</h3><div class="f">${t('date','Data e takimit',m.date,'date')}${s('mode','Mënyra e takimit',MOD,m.mode)}${s('type','Tipi',TIP,m.type)}${t('company','Kompania *',m.company)}${t('nipt','NIPT',m.nipt)}${t('industry','Industria',m.industry)}${t('contact','Person kontakti',m.contact)}${s('pos','Pozicioni',POZ,m.pos)}${t('phone','Telefon',m.phone,'tel')}${t('email','Email',m.email,'email')}${s('prio','Prioriteti',PRI,m.prio)}${t('potential','Potenciali mujor (Lekë)',m.potential,'number')}${t('bill','Fatura mujore (Lekë)',m.bill,'number')}${s('volton','Interes për kalim në Volton',['Po','Jo'],m.volton)}</div>
+<h2>Produktet</h2><div class="f">${PRODS.map(p=>{const x=(m.prods||{})[p[0]]||{};return`<div class="pr"><label><input type="checkbox" id="y_${p[0]}" ${x.y?'checked':''}>${p[1]}</label><input id="q_${p[0]}" type="number" min="0" placeholder="Sasia" value="${esc(x.q)}"></div>`}).join('')}${t('laptop','Laptop/Desktop (sasia)',m.laptop,'number')}${t('printer','Printera (sasia)',m.printer,'number')}${t('acc','Aksesorë IT (sasia)',m.acc,'number')}</div>
+<h2>Statusi dhe komentet</h2><div class="f">${s('status','Statusi *',ST,m.status)}<label class="w">Komentet (sa më të detajuara)<textarea id="f_comment">${esc(m.comment)}</textarea></label></div>
+<p><button class="b p" onclick="save()">${edit?'Ruaj ndryshimet':'Regjistro takimin'}</button> ${edit?'<button class="b" onclick="edit=null;draw()">Anulo</button>':''} <span id="msg" class="mu"></span></p></div>`}
+async function save(){
+  const g=i=>$('#f_'+i).value.trim(),d={};
+  ['date','mode','type','company','nipt','industry','contact','pos','phone','email','prio','volton','status','comment'].forEach(k=>d[k]=g(k));
+  ['potential','bill','laptop','printer','acc'].forEach(k=>d[k]=g(k)===''?null:+g(k));
+  if(!d.company||!d.status||!d.date){$('#msg').textContent='Plotëso Kompania, Data dhe Statusi.';return}
+  d.prods={};PRODS.forEach(p=>d.prods[p[0]]={y:$('#y_'+p[0]).checked,q:$('#q_'+p[0]).value===''?null:+$('#q_'+p[0]).value});
+  try{
+    if(edit)await db.doc('meetings/'+edit.id).update({...d,upd:Date.now()});
+    else await db.collection('meetings').add({...d,agentId:me.id,agentName:staff[me.id]?.name||me.name,ts:Date.now()});
+    edit=null;tab='mine';draw();
+  }catch(e){$('#msg').textContent='Gabim në ruajtje: '+e.message}}
+function users(){
+  const rows=Object.entries(staff).map(([id,u])=>`<tr><td>${esc(u.name)}</td><td><select onchange="setRole('${id}',this.value)">${ROLES.map(r=>`<option ${r===u.role?'selected':''}>${r}</option>`).join('')}</select></td><td>${id===me.id?'<span class="mu">ti</span>':`<button class="b" onclick="rm('${id}')">Hiq</button>`}</td></tr>`).join('');
+  const rq=reqs.filter(r=>!staff[r.id]).map(r=>`<tr><td>${esc(r.name)}</td><td><select id="r_${r.id}">${ROLES.map(x=>`<option>${x}</option>`).join('')}</select></td><td><button class="b p" onclick="appr('${r.id}','${esc(r.name).replace(/'/g,'’')}')">Mirato</button></td></tr>`).join('');
+  return`<div class="grid g2"><div class="card"><h3>Kërkesa në pritje</h3><table>${rq||'<tr><td class="mu">Asnjë kërkesë.</td></tr>'}</table></div><div class="card"><h3>Përdoruesit aktivë</h3><table>${rows}</table></div></div><p class="mu">Çdo person që hap lidhjen dhe nuk është në listë shfaqet te kërkesat. Agjentët duhet të ndahen me akses “Contributor”, menaxherët dhe adminët si “Editor”.</p>`}
+const setRole=(id,r)=>db.doc('staff/'+id).update({role:r}),rm=id=>confirm('Ta heqim këtë përdorues?')&&db.doc('staff/'+id).delete(),
+appr=async(id,n)=>{await db.doc('staff/'+id).set({name:n,role:$('#r_'+id).value});db.doc('requests/'+id).delete().catch(()=>{})};
+async function csv(){
+  const dl=await claude.use('downloads');if(!dl)return alert('Shkarkimi nuk është i disponueshëm.');
+  const h=['date','mode','agentName','type','company','nipt','industry','contact','pos','phone','email','prio','potential','bill','volton','status','comment'];
+  const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';
+  try{await dl.save({filename:'takimet_'+today()+'.csv',data:'\ufeff'+h.join(',')+'\n'+filt().map(m=>h.map(k=>q(m[k])).join(',')).join('\n')})}catch(e){}}
+init().catch(e=>{$('#app').innerHTML='<div class="c"><h2>Gabim gjatë nisjes</h2><p class="mu">'+esc(e&&e.message||e)+'</p></div>'});
+
+</script></body></html>
